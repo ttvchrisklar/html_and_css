@@ -1,6 +1,4 @@
-var ctx = document.getElementById("game_bord").getContext("2d"),
-    canvas = document.getElementById("game_bord"),
-    allContainerblocksOnScreen = [],
+var allContainerblocksOnScreen = [],
     newContainerblock,
     numberblockOnScreen = [],
     newNumberblock,
@@ -8,7 +6,9 @@ var ctx = document.getElementById("game_bord").getContext("2d"),
     spawnAmount = 2,
     score = 0;
 
-const spawnAmountDiv = document.getElementById("spawnAmountDiv");
+const spawnAmountDiv = document.getElementById("spawnAmountDiv"),
+    ctx = document.getElementById("game_bord").getContext("2d"),
+    canvas = document.getElementById("game_bord");
 
 //TODO fix the block movment system.
 //TODO add an event if the bord is full
