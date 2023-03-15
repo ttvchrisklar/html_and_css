@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html id="htmltag" lang="en" style="background-color: black; color: white;">
+
+<head>
+    <meta charset="UTF-8">
+    <title>coding opgave</title>
+</head>
+<style>
+    button {
+        display: inline-block;
+        padding: 10px 10px 10px 10px;
+        font-size: 12px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0px 10px #999;
+        width: auto;
+    }
+
+    button:active {
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+</style>
+
+<body>
+    <h1>click on the color you want the bakground to be</h1>
+    <ul>
+        <il>
+            <ul>
+                <button id="green" onclick="colorswap(this)" style="background-color:green;color:white;">green</button>
+            </ul>
+            <br>
+
+            <ul>
+                <button id="red" onclick="colorswap(this)" style="background-color:red;color:white;">red</button>
+            </ul>
+            <br>
+
+            <ul>
+                <button id="blue" onclick="colorswap(this)" style="background-color:blue;color:white;">blue</button>
+            </ul>
+            <br>
+
+            <ul>
+                <button id="white" onclick="colorswap(this)" style="background-color:white;color:black;">white</button>
+            </ul>
+            <br>
+
+            <ul>
+                <button id="black" onclick="colorswap(this)" style="background-color:black;color:white;">black</button>
+            </ul>
+            <br>
+            <ul>
+                <button id="randomnses" onclick="colorswap(this)">randomnses</button>
+            </ul>
+            <br>
+        </il>
+    </ul>
+</body>
+<script>
+    var htmltag = document.getElementById("htmltag");
+    var randomcolers = 0;
+    function colorswap(presdbutton) {
+        switch (presdbutton.id) {
+            case "green":
+                htmltag.style.backgroundColor = "green";
+                break;
+            case "red":
+                htmltag.style.backgroundColor = "red";
+                break;
+            case "blue":
+                htmltag.style.backgroundColor = "blue";
+                break;
+            case "white":
+                htmltag.style.backgroundColor = "white";
+                htmltag.style.color = "black";
+                break;
+            case "black":
+                htmltag.style.backgroundColor = "black";
+                htmltag.style.color = "white";
+                break;
+            case "randomnses":
+                setInterval(() => {
+                    randomcolor();
+                }, 10);
+                break;
+            default: console.log(`that is not a button: ${presdbutton.id}`);
+        }
+    }
+    function randomcolor() {
+        randomcolers = Math.floor(Math.random() * 5);
+        console.log(randomcolers);
+        switch (randomcolers) {
+            case 0:
+                htmltag.style.backgroundColor = "green";
+                break;
+            case 1:
+                htmltag.style.backgroundColor = "red";
+                break;
+            case 2:
+                htmltag.style.backgroundColor = "blue";
+                break;
+            case 3:
+                htmltag.style.backgroundColor = "white";
+                htmltag.style.color = "black";
+                break;
+            case 4:
+                htmltag.style.backgroundColor = "black";
+                htmltag.style.color = "white";
+                break;
+        }
+    }
+</script>
+
+</html>

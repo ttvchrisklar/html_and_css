@@ -1,0 +1,18 @@
+canvas {
+    position: absolute;
+    top: 100px;
+    left: 750px;
+    border-style: solid;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+}

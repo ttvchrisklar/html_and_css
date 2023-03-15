@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>2048</title>
+    </head>
+    <style>
+
+    </style>
+
+    <body>
+        <canvas id="game_bord" width="400" height="400"></canvas>
+        <div id="spawnAmountDiv"></div>
+        <div id="buttons">
+            <button>N/A</button>
+            <button id="moveUp" onclick="buttonMove('up')">Move Up</button>
+            <button>N/A</button>
+            <button id="moveLeft" onclick="buttonMove('left')">Move Left</button>
+            <button id="moveDown" onclick="buttonMove('down')">Move Down</button>
+            <button id="moveRight" onclick="buttonMove('right')">Move Right</button>
+            <button onclick="changeSpawnAmount(-1)">Spawn -</button>
+            <button id="spawnNumbers" onclick="createNewNumberblock(spawnAmount)">Spawn Numbers</button>
+            <button onclick="changeSpawnAmount(+1)">Spawn +</button>
+        </div>
+    </body>
+    <script src="script.js"></script>
+
+</html>

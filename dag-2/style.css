@@ -1,0 +1,35 @@
+canvas {
+    border-style: solid;
+    border-color: white;
+    position: relative;
+}
+button {
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: steelblue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px gray;
+    width: auto;
+}
+
+button:hover {
+    background-color: steelblue;
+}
+
+button:active {
+    background-color: steelblue;
+    box-shadow: 0 5px gray;
+    transform: translateY(4px);
+}
+
+html {
+    color: white;
+    background-color: black;
+}

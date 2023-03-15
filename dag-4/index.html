@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dag 4</title>
+</head>
+<style>
+    button {
+        display: inline-block;
+        padding: 5px 5px;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: green;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px gray;
+        width: auto;
+    }
+
+    button:hover {
+        background-color: green;
+    }
+
+    button:active {
+        background-color: steelblue;
+        box-shadow: 0 5px gray;
+        transform: translateY(4px);
+    }
+
+    html {
+        color: white;
+        background-color: black;
+    }
+</style>
+
+<body>
+    <div>
+        <div id="monyText"></div>
+        <div id="monyOnClickText"></div>
+        <div id="reberthText"></div>
+    </div>
+    <button onclick="getMony()">Get Mony!!</button>
+    <button onclick="getMoreMonyOnClick()">get More Mony On Click</button>
+    <button onclick="roborn()">Get roborn!!</button>
+</body>
+<script src="script.js"></script>
+
+</html>

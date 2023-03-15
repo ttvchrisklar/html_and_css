@@ -1,0 +1,37 @@
+html {
+    font-size: 30px;
+    
+}
+
+body {
+    background-color: Cyan;
+    text-align: center;
+    }
+    h1 {
+        color: rgb(152,52,254);
+       border: 15px solid ForestGreen;
+       
+      }
+      p {
+        border: 5px solid rgb(154,231,1 );
+        
+      }
+  h2 {
+      border: 10px solid MediumSeaGreen;
+     }
+      ol {
+        border: 5px solid rgb(75,45,87);
+      }
+      li {
+        border: 5px solid rgb(65,0,2);
+      }
+  h3 {
+      border: 5px solid DarkMagenta;
+     }
+  h4{
+     border: 10px solid rgb(57,102,91);
+     color: blue;
+    }
+  h5{
+     border: 10px solid rgba(10, 100, 99, 50);
+    }
