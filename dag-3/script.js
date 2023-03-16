@@ -13,6 +13,10 @@ const spawnAmountDiv = document.getElementById("spawnAmountDiv"),
 //TODO fix the block movment system.
 //TODO add an event if the bord is full
 
+function gameStart() {
+    gameUpdate();
+}
+
 function changeSpawnAmount(amount) {
     spawnAmount += amount;
     spawnAmountDiv.innerHTML = `Spawn amount: ${spawnAmount}`;
@@ -204,7 +208,7 @@ function createNewContainerblock() {
         if (i == 15) {
             clearInterval(interval);
             console.log(allContainerblocksOnScreen);
-            // createNewNumberblock(2);
+            createNewNumberblock(2);
         }
         newContainerblock = new containerblock();
         newContainerblock.position = i;
@@ -271,7 +275,12 @@ function setRandomBlockPosition(newNumberblock) {
         console.error("[script:242] ERROR: board full");
     }
 }
+function gameOver() {
+    numberblockOnScreen.forEach((numberBlock) => {
+        numberBlock.checkIfMerge(numberBlock.x, numberBlock.y);
+    });
+}
 
 // this NEEDS to be at the bottom!!!
-window.onload = gameUpdate();
+window.onload = gameStart();
 // always att the bottom!!!
