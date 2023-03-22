@@ -25,7 +25,7 @@ function gameUpdate() {
 
 function rollDice() {
     var i = 0;
-    var speed = 100;
+    var speed = 10;
     var interval = setInterval(() => {
         var rolldDice = Math.floor(Math.random() * 6) + 1;
         if (i == 15) {
@@ -52,7 +52,7 @@ function endRound() {
     totalPoint += thisRoundsPoints;
     thisRoundsPoints = 0;
     totalRounds += 1;
-    score.innerHTML = `score: ${totalPoint} you will get:${thisRoundsPoints} if you stopp now, Round: ${totalRounds}`;
+    score.innerHTML = `score: ${totalPoint} you will get: ${thisRoundsPoints} if you stopp now, Round: ${totalRounds}`;
     if (totalPoint >= 100) {
         score.innerHTML = `congratulasions you won you ended the game whit  ${totalPoint}/100 points, play agen?<br> <button onclick="gameStart()">play agen</button>`;
     }
