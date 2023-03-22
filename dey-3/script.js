@@ -4,7 +4,8 @@ var allContainerblocksOnScreen = [],
     newNumberblock,
     gameInterval,
     spawnAmount = 2,
-    score = 0;
+    score = 0,
+    blocksBlockd = [];
 
 const spawnAmountDiv = document.getElementById("spawnAmountDiv"),
     ctx = document.getElementById("game_bord").getContext("2d"),
@@ -201,6 +202,10 @@ class numberblock {
         }
     }
 }
+function gameOver() {
+    console.error("[script:242] ERROR: board full");
+    blocksBlockd = [];
+}
 function createNewContainerblock() {
     var i = 0;
     var speed = 50;
@@ -271,14 +276,18 @@ function setRandomBlockPosition(newNumberblock) {
         newNumberblock.draw();
         console.log(`Number block placed at (${randomContainerBlock.x}, ${randomContainerBlock.y})`);
     } else {
-        //if the bord os full then it will not spawn a new one
-        console.error("[script:242] ERROR: board full");
+        var blockUp = newNumberblock.checkIfMerge(newNumberblock.x, newNumberblock.y - newNumberblock.height);
+        var blockDown = newNumberblock.checkIfMerge(newNumberblock.x, newNumberblock.y + newNumberblock.height);
+        var blockLeft = newNumberblock.checkIfMerge(newNumberblock.x - newNumberblock.width, newNumberblock.y);
+        var blockRight = newNumberblock.checkIfMerge(newNumberblock.x + newNumberblock.width, newNumberblock.y);
+        for (let i = 0; i < numberblockOnScreen.length; i++) {
+            if (blockUp && blockDown && blockLeft && blockRight == false) {
+                blocksBlockd.push(newNumberblock);
+                console.log(blocksBlockd.length);
+                if (blocksBlockd.length >= 15) gameOver();
+            }
+        }
     }
-}
-function gameOver() {
-    numberblockOnScreen.forEach((numberBlock) => {
-        numberBlock.checkIfMerge(numberBlock.x, numberBlock.y);
-    });
 }
 
 // this NEEDS to be at the bottom!!!
