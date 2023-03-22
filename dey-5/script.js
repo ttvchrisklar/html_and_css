@@ -18,7 +18,7 @@ function gameStart() {
     endRound();
 }
 
-function gameUpdate() {
+function gameUpdate(numberRolld) {
     ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the entire canvas
     drawDice(numberRolld);
 }
@@ -30,10 +30,10 @@ function rollDice() {
         var rolldDice = Math.floor(Math.random() * 6) + 1;
         if (i == 15) {
             clearInterval(interval);
-            drawDice(rolldDice);
+            gameUpdate(rolldDice);
             checkNumber(rolldDice);
         }
-        drawDice(rolldDice);
+        gameUpdate(rolldDice);
         i++;
     }, speed);
 }
