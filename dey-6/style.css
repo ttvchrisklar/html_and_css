@@ -58,6 +58,7 @@ html {
     width: 99.5%;
     box-sizing: border-box;
     border: solid blue 5px;
+    justify-content: center;
 }
 .box-under {
     cursor: pointer;
@@ -65,10 +66,7 @@ html {
     display: flex;
     font-size: 20px;
     width: 33%;
-
+    justify-content: center;
     box-sizing: border-box;
     border: solid red 5px;
-}
-p {
-    
 }
