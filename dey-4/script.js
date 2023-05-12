@@ -6,8 +6,8 @@ var mony = 0,
     reberthText = document.getElementById("reberthText");
 function gameUpdate() {
     monyText.innerHTML = `<p>you have ${mony}$</p>`;
-    monyOnClickText.innerHTML = `<p>you get ${monyPerClick}$ per click, next mony Per Click upgrade costs ${monyPerClick * 100}</p>`;
-    reberthText.innerHTML = `<p>you have reberthd ${reberth} times, and need ${reberth * 1000} for next reberth</p>`;
+    monyOnClickText.innerHTML = `<p>you get ${monyPerClick}$ per click, next Mony Per Click upgrade costs ${monyPerClick * 100}</p>`;
+    reberthText.innerHTML = `<p>you have ${reberth} reberths, and need ${reberth * 1000} for next reberth</p>`;
 }
 function getMony() {
     mony += monyPerClick;
@@ -22,7 +22,7 @@ function getMoreMonyOnClick() {
     }
     gameUpdate();
 }
-function roborn() {
+function reborn() {
     if (mony >= 1000 * reberth) {
         mony = 0;
         monyPerClick = 1;
@@ -32,3 +32,5 @@ function roborn() {
     }
     gameUpdate();
 }
+
+window.onload = gameUpdate();
