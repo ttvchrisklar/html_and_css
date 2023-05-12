@@ -5,97 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>dag 4</title>
 </head>
-<style>
-    #buttondivs {
-        padding: 10px 10px;
-    }
 
-    #textBoxe {
-        box-sizing: border-box;
-        width: 35%;
-        border: solid green 3px;
-    }
-
-    #buttonbox {
-        display: block;
-        height: 500px;
-        width: 400px;
-        font-size: 20px;
-        text-align: center;
-        box-sizing: border-box;
-        border: solid white 3px;
-    }
-
-    button {
-        display: inline-block;
-        padding: 5px 5px;
-        font-size: 20px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: #fff;
-        background-color: green;
-        border: none;
-        border-radius: 15px;
-        box-shadow: 0 9px gray;
-        width: auto;
-    }
-
-    button:hover {
-        background-color: green;
-    }
-
-    button:active {
-        background-color: steelblue;
-        box-shadow: 0 5px gray;
-        transform: translateY(4px);
-    }
-
-    html {
-        background-color: black;
-        color: white;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        width: 100%;
-        height: 1100px;
-        border: solid orange 3px;
-        padding: 1px;
-    }
-
-    *,
-    *:before,
-    *:after {
-        -webkit-box-sizing: inherit;
-        -moz-box-sizing: inherit;
-        box-sizing: inherit;
-    }
-</style>
 
 <body>
-    <div>
-        <div id="textBoxe">
-            <div id="monyText"></div>
-            <div id="monyOnClickText"></div>
-            <div id="reberthText"></div>
-        </div>
-        <div id="buttonbox">
-            <div id="buttondivs">
-                <button onclick="getMony()">Get Mony!!</button>
-            </div>
-            <div id="buttondivs">
-                <button onclick="getMoreMonyOnClick()">get More Mony On Click</button>
-            </div>
-            <div id="buttondivs">
-                <button onclick="reborn()">Get roborn!!</button>
-            </div>
-            <p>ipse
-            </p>
-        </div>
+
+    <div id="textBoxe">
+        <div id="monyText"></div>
+        <div id="monyOnClickText"></div>
+        <div id="reberthText"></div>
     </div>
+    <div id="buttonbox">
+        <div id="buttondivs">
+            <button onclick="getMoreMonyOnClick()">get More Mony On Click</button>
+        </div>
+        <div id="buttondivs">
+            <button onclick="reborn()">Get roborn!!</button>
+
+        </div>
+        <div class="mainButtonDiv">
+            <button class="mainButton" onclick="getMony()">i need a big<br>.<br>.</button>
+        </div>
 </body>
 <script src="script.js"></script>
 

@@ -1,0 +1,70 @@
+#buttondivs {
+    padding: 10px 10px;
+}
+
+#textBoxe {
+    padding: 0px 0px 0px 10px;
+    box-sizing: border-box;
+    width: 35%;
+    border: solid green 3px;
+}
+
+#buttonbox {
+    display: block;
+    height: 500px;
+    width: 400px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: solid white 3px;
+}
+
+.mainButtonDiv {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+}
+.mainButton {
+    display: inline-block;
+    padding: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: red;
+    background-color: red;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 10px black;
+    width: auto;
+}
+
+.mainButton:hover {
+    background-color: red;
+}
+
+.mainButton:active {
+    background-color: red;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+}
+
+html {
+    background-color: gray;
+    color: white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 1100px;
+    border: solid orange 3px;
+    padding: 1px;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}

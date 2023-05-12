@@ -1,6 +1,6 @@
 var mony = 0,
     monyPerClick = 1,
-    reberth = 0,
+    reberth = 1,
     monyText = document.getElementById("monyText"),
     monyOnClickText = document.getElementById("monyOnClickText"),
     reberthText = document.getElementById("reberthText");
