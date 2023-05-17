@@ -1,5 +1,6 @@
 #buttondivs {
     display: flex;
+    flex-direction: column;
 }
 .divtextcotainers {
     display: flex;
