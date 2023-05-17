@@ -13,28 +13,32 @@
 <body>
 
     <div id="textBoxe">
-        <div id="monyText"></div>
-        <div id="monyOnClickText"></div>
-        <div id="printerText"></div>
-        <div id="reberthText"></div>
+        <span id="monyText"></span>
     </div>
     <div id="buttonbox">
         <div id="buttondivs">
-            <button id="B1" class="button-activety-can-not-buy-upgrade" onclick="getMoreMonyOnClick()">Get More Mony On
-                Click</button>
+            <div style="display:flex;flex-direction: column;">
+                <span id="gMMOCUText"></span>
+                <button id="B1" class="button-activety-can-not-buy-upgrade" onclick="getMoreMonyOnClick()">Get More Mony
+                    On Click</button>
+            </div>
         </div>
-        <div id="buttondivs">
+        <div id="buttondivs" style="display:flex;flex-direction: column;">
+            <span id="BuyAPrinter"></span>
             <button id="B2" class="button-activety-can-not-buy-upgrade" onclick="monyPrinter(1)">Buy a printer</button>
+            <span id="Fasterprinting"></span>
             <button id="B3" class="button-activety-can-not-buy-upgrade" onclick="monyPrinter(2)">Faster
                 printing</button>
-            <button id="B4" class="button-activety-can-not-buy-upgrade" onclick="monyPrinter(4)">More printing
-                power</button>
+            <span id="MorePrintingPower"></span>
+            <button id="B4" class="button-activety-can-not-buy-upgrade" onclick="monyPrinter(4)">More
+                printing power</button>
         </div>
-        <div id="buttondivs">
+        <div id="buttondivs" style="display:flex;flex-direction: column;">
+            <span id="reberthText"></span>
             <button id="B5" class="button-activety-can-not-buy-upgrade" onclick="reborn()">Get reborn!!</button>
         </div>
         <div class="mainButtonDiv">
-            <button class="mainButton" onclick="getMony()">i need mony<br>.<br>.</button>
+            <button class="mainbutton" onclick="getMony()">i need mony<br>.<br>.</button>
         </div>
     </div>
 </body>

@@ -2,9 +2,7 @@ var mony = 0,
     monyPerClick = 1,
     reberth = 1,
     monyText = document.getElementById("monyText"),
-    monyOnClickText = document.getElementById("monyOnClickText"),
     reberthText = document.getElementById("reberthText"),
-    printerText = document.getElementById("printerText"),
     //this is the sotend term for getMoreMonyOnClickUpgrade.
     gMMOCU = 50,
     reberthUpgradeCost = 100000,
@@ -20,16 +18,19 @@ const button1 = document.getElementById("B1"),
     button2 = document.getElementById("B2"),
     button3 = document.getElementById("B3"),
     button4 = document.getElementById("B4"),
-    button5 = document.getElementById("B5");
+    button5 = document.getElementById("B5"),
+    gMMOCUText = document.getElementById("gMMOCUText"),
+    BuyAPrinter = document.getElementById("BuyAPrinter"),
+    Fasterprinting = document.getElementById("Fasterprinting"),
+    MorePrintingPower = document.getElementById("MorePrintingPower"),
+    mainButton = document.getElementById("mainButton");
 function gameUpdate() {
-    monyText.innerHTML = `<p>Mony:<strong> ${mony}$</strong></p>`;
-    monyOnClickText.innerHTML = `<p>Mony Per Click: <strong>${monyPerClick}$</strong>, Mony Per Click uppgrade cost: ${gMMOCU}$</p>`;
-    reberthText.innerHTML = `<p>Reberths: <strong>${reberth}</strong>, Reberth cost: <strong>${reberthUpgradeCost}$</strong></p>`;
-    printerText.innerHTML = `<p>Printers: <strong>${
-        amountOfPrinters.length
-    }</strong>, Printer cost: <strong>${printerCost}</strong>, Printer interval: <strong>${gameTik}/${printerInterval}</strong>, Printer interval prise:<strong> ${printerIntervalUpgradePrise}</strong>, Printing amount: <strong>${calculatePrintingAmount()}</strong>, next Printer upgrade cost: <strong>${
-        calculatePrintierLevels() * 100
-    }</strong></p>`;
+    monyText.innerHTML = `Mony:<strong> ${mony}$</strong>`;
+    gMMOCUText.innerHTML = `Mony Per Click: <strong>${monyPerClick}$</strong>, Mony Per Click uppgrade cost: ${gMMOCU}$`;
+    reberthText.innerHTML = `Reberths: <strong>${reberth}</strong>, Reberth cost: <strong>${reberthUpgradeCost}$</strong>`;
+    BuyAPrinter.innerHTML = `Printers: <strong>${amountOfPrinters.length}</strong>, Printer cost: <strong>${printerCost}</strong>`;
+    Fasterprinting.innerHTML = `Printer interval: <strong>${gameTik}/${printerInterval}</strong>, Printer interval prise:<strong> ${printerIntervalUpgradePrise}</strong>`;
+    MorePrintingPower.innerHTML = `Printing amount: <strong>${calculatePrintingAmount()}</strong>, next Printer upgrade cost: <strong>${calculatePrintierLevels() * 100}</strong>`;
     updatedButtonState();
 }
 function updatedButtonState() {

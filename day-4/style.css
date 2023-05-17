@@ -1,18 +1,26 @@
 #buttondivs {
-    padding: 10px 10px;
+    display: flex;
+}
+.divtextcotainers {
+    display: flex;
+    flex-direction: column;
+    font-size: 5px;
 }
 
 #textBoxe {
     padding: 0px 0px 0px 10px;
     box-sizing: border-box;
-    width: 35%;
+    width: 20%;
     border: solid green 3px;
+    position: absolute;
+    top: 5%;
+    left: 44%;
+    font-size: 250%;
 }
 
 #buttonbox {
     display: block;
     width: 30%;
-    font-size: 20px;
     box-sizing: border-box;
     border: solid white 3px;
 }
@@ -30,14 +38,14 @@ button:active {
     border-radius: 10px;
     padding: 10px;
     border: none;
-    background-color: green;
+    background-color: lightgreen;
 }
 .button-activety-can-not-buy-upgrade {
     font-size: 15px;
     border-radius: 10px;
     padding: 10px;
     border: none;
-    background-color: red;
+    background-color: lightcoral;
 }
 
 .mainButtonDiv {
@@ -45,7 +53,7 @@ button:active {
     top: 50%;
     left: 48%;
 }
-.mainButton {
+.mainbutton {
     display: inline-block;
     padding: 40px;
     font-size: 20px;
@@ -61,11 +69,11 @@ button:active {
     width: auto;
 }
 
-.mainButton:hover {
+.mainbutton:hover {
     background-color: red;
 }
 
-.mainButton:active {
+.mainbutton:active {
     background-color: red;
     box-shadow: 0 5px black;
     transform: translateY(4px);
