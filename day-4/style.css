@@ -7,7 +7,12 @@
     flex-direction: column;
     font-size: 5px;
 }
-
+.playTimeDiv {
+    position: absolute;
+    top: 93%;
+    left: 89%;
+    font-size: 15px;
+}
 #textBoxe {
     padding: 0px 0px 0px 10px;
     box-sizing: border-box;
@@ -75,6 +80,11 @@ button:active {
 }
 
 .mainbutton:active {
+    background-color: red;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+}
+.mainbuttonActive {
     background-color: red;
     box-shadow: 0 5px black;
     transform: translateY(4px);

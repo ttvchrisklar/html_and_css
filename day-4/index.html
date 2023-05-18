@@ -17,20 +17,19 @@
     </div>
     <div id="buttonbox">
         <div id="buttondivs">
-            <div>
-                <span id="gMMOCUText"></span>
-                <button id="B1" class="button-activety-can-not-buy-upgrade" onclick="getMoreMonyOnClick()">Get More Mony
-                    On Click</button>
-            </div>
+            <span id="gMMOCUText"></span>
+            <button id="B1" class="button-activety-can-not-buy-upgrade" onclick="getMoreMonyOnClick()">Get More Mony
+                On Click</button>
         </div>
         <div id="buttondivs">
             <span id="BuyAPrinter"></span>
-            <button id="B2" class="button-activety-can-not-buy-upgrade" onclick="monyPrinter(1)">Buy a printer</button>
-            <span id="Fasterprinting"></span>
-            <button id="B3" class="button-activety-can-not-buy-upgrade" onclick="monyPrinter(2)">Faster
+            <button id="B2" class="button-activety-can-not-buy-upgrade" onclick="monyPrinter(1)">Buy a
+                printer</button>
+            <span style="visibility: hidden;" id="Fasterprinting"></span>
+            <button style="visibility: hidden;" id="B3" class="button-activety-can-not-buy-upgrade" onclick="monyPrinter(2)">Faster
                 printing</button>
-            <span id="MorePrintingPower"></span>
-            <button id="B4" class="button-activety-can-not-buy-upgrade" onclick="monyPrinter(4)">More
+            <span style="visibility: hidden;" id="MorePrintingPower"></span>
+            <button style="visibility: hidden;" id="B4" class="button-activety-can-not-buy-upgrade" onclick="monyPrinter(4)">More
                 printing power</button>
         </div>
         <div id="buttondivs">
@@ -38,8 +37,11 @@
             <button id="B5" class="button-activety-can-not-buy-upgrade" onclick="reborn()">Get reborn!!</button>
         </div>
         <div class="mainButtonDiv">
-            <button class="mainbutton" onclick="getMony()">i need mony<br>.<br>.</button>
+            <button id="mainButton" class="mainbutton" onclick="getMony()">i need mony<br>.<br>.</button>
         </div>
+    </div>
+    <div class="playTimeDiv">
+        <p id="playTiemText"></p>
     </div>
 </body>
 <script src="script.js"></script>
